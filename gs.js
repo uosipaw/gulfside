@@ -80,6 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
       form.reset();
       // Resume animation after form submission is complete
       resumeAnimation();
+      setTimeout(function () {
+        messageDiv.innerHTML = "";
+      }, 3000);
     }, 1000); // Simulate server response time
   });
   // Pause animation when any form input is focused
