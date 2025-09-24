@@ -141,10 +141,10 @@ body::after {
 
 .animated-text {
     font-family: 'Cabin Sketch', cursive;
-    font-size: 15vh;
-    margin: 0;
+    font-size: 5em;
+    margin: 0 5%;
     display: flex;
-    gap: 4px;
+    gap: 4%;
     line-height: 1;
 }
 
@@ -164,7 +164,7 @@ body::after {
 
 .animated-text .word:last-child {
     transform-origin: center left;
-    animation: popInRight 9000ms 120ms cubic-bezier(.2, .9, .2, 1) both;
+    animation: popInRight 9000ms cubic-bezier(.2, .9, .2, 1) both;
 }
 
 @keyframes popInLeft {
@@ -233,7 +233,7 @@ body::after {
 }
 
 .note {
-    color: var(--muted);
+    font-family: 'Cabin Sketch', serif;
     font-size: 34px;
     margin-top: 8px;
     text-align: center
@@ -283,24 +283,24 @@ textarea:focus {
 }
 
 button {
+    font-family: 'Cabin Sketch', serif;
     width: 100%;
-    padding: 12px 14px;
+    padding: 12px 4px;
     border-radius: 10px;
     border: 0;
     cursor: pointer;
-    font-weight: 800;
     background: rgba(0, 0, 0, 0.668);
     color: #fff;
     box-shadow: 0 6px 18px rgba(92, 33, 182, 0.18);
 }
 
 button:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.2);
     filter: brightness(.98);
 }
 
 button:active {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
 }
 
 .foot {
